@@ -1,6 +1,7 @@
+package ex1;
+
 import static org.junit.Assert.*;
 import org.junit.Test;
-import src.main.Queue;
 
 public class QueueTest {
 

@@ -1,4 +1,3 @@
-package java-ex-new;
 
 import static org.junit.Assert.assertTrue;
 

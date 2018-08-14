@@ -1,3 +1,5 @@
+package ex2;
+
 import static org.junit.Assert.*;
 
 import ex2.Stack;

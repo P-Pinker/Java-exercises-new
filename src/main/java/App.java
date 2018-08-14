@@ -1,4 +1,3 @@
--ex-new;
 
 /**
  * Hello world!
