@@ -11,10 +11,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.stream.Collectors;
 
 
 @WebServlet("/geocoding")
@@ -44,7 +46,20 @@ public class GeocodingServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         super.doPost(req, resp);
-    }
 
+        final String GOOGLE_API_KEY = "AIzaSyDWcJR9h8NGAeZFqiZhdbW6PxHO0kNuPRg";
+
+        String input = String.valueOf(req.getParameterValues("address"));
+
+        String[] params = input.split("\\s+");
+
+        for (int i = 0; i < params.length; i++) {
+            params[i] = params[i].replaceAll("[^\\w]", "");
+        }
+
+        String data = Arrays.stream(params).collect(Collectors.joining("%2520"));
+        resp.sendRedirect("https://google-developers.appspot.com/maps/documentation/utils/geocoder/#q%3D" + data);
+
+    }
 
 }

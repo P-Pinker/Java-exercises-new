@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1382b4a7-4253-42dd-9d68-91e75ace8707" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ex4/GeocodingServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/freemarker/ConfigProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/freemarker/TemplateProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/fm-templates/geocoding.ftlh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jboss-web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ex4/GeocodingServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ex4/GeocodingServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/fm-templates/geocoding.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/fm-templates/geocoding.ftlh" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,41 +27,55 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="0-SNAPSHOT" value="1" />
           <entry key="ftlh" value="1" />
-          <entry key="java" value="21" />
-          <entry key="xml" value="3" />
+          <entry key="java" value="23" />
+          <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="FTL" value="1" />
-          <entry key="JAVA" value="21" />
-          <entry key="XML" value="3" />
+          <entry key="JAVA" value="23" />
+          <entry key="UML" value="1" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="ftlh" value="56" />
-          <entry key="java" value="1207" />
-          <entry key="xml" value="33" />
+          <entry key="ftlh" value="57" />
+          <entry key="java" value="1579" />
+          <entry key="xml" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="FTL" value="56" />
-          <entry key="JAVA" value="1207" />
-          <entry key="XML" value="33" />
+          <entry key="FTL" value="57" />
+          <entry key="JAVA" value="1579" />
+          <entry key="XML" value="34" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ex4/GeocodingServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+            <state relative-caret-position="320">
+              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="697">
+              <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -98,17 +109,18 @@
         <option value="$PROJECT_DIR$/src/main/java/App.java" />
         <option value="$PROJECT_DIR$/src/test/java/AppTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ex1/QueueTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ex1/QueueImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/ex2/StackImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/ex3/Consumer2.java" />
         <option value="$PROJECT_DIR$/src/main/java/ex3/Producer.java" />
         <option value="$PROJECT_DIR$/src/main/java/ex3/Consumer.java" />
         <option value="$PROJECT_DIR$/src/main/java/ex4/FreeMarkerClient.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jboss-web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/freemarker/TemplateProvider.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ex4/GeocodingApi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ex1/QueueImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/fm-templates/geocoding.ftlh" />
         <option value="$PROJECT_DIR$/src/main/java/ex4/GeocodingServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/freemarker/TemplateProvider.java" />
       </list>
     </option>
   </component>
@@ -137,10 +149,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
-    <option name="width" value="652" />
-    <option name="height" value="492" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="656" />
+    <option name="height" value="456" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -203,6 +215,15 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="javaexnew" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jjdd4-ex-new" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="fm-templates" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -213,10 +234,13 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534436686021" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534454196032" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../JavaEE/usersengine" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -334,7 +358,7 @@
       <option name="presentableId" value="Default" />
       <updated>1534245458979</updated>
       <workItem from="1534245463316" duration="9239000" />
-      <workItem from="1534326652862" duration="14821000" />
+      <workItem from="1534326652862" duration="21236000" />
     </task>
     <servers />
   </component>
@@ -356,13 +380,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24060000" />
+    <option name="totallyTimeSpent" value="30475000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2526475" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25189108" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -370,6 +394,7 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
@@ -377,7 +402,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
@@ -396,34 +421,39 @@
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.32980332" />
     </layout>
     <layout-to-restore>
-      <window_info id="Image Layers" order="0" />
-      <window_info id="Designer" order="1" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.24886535" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="4" visible="true" weight="0.3289689" />
-      <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" id="Run" order="7" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="right" id="Palette" order="0" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Database" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2526475" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Spring" order="0" />
+      <window_info anchor="bottom" id="Java Enterprise" order="1" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.3289689" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.3289689" />
+      <window_info anchor="right" id="JSF" order="0" />
+      <window_info anchor="right" id="CDI" order="1" />
+      <window_info anchor="right" id="Bean Validation" order="2" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="3" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="4" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Palette&#9;" order="10" />
+      <window_info anchor="right" id="Maven Projects" order="11" weight="0.32980332" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -451,13 +481,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ex1/QueueImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -555,10 +578,133 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="uml://MAVEN/java-ex-new:java-ex-new:1.0-SNAPSHOT">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>java-ex-new:java-ex-new:1.0-SNAPSHOT</OriginalElement>
+          <nodes>
+            <node x="342.3666666666667" y="247.0">java-ex-new:java-ex-new:1.0-SNAPSHOT</node>
+            <node x="26.5" y="158.0">junit:junit:jar:4.11</node>
+            <node x="0.0" y="79.0">junit:junit:jar:4.11/org.hamcrest:hamcrest-core:jar:1.3</node>
+            <node x="124.93333333333334" y="158.0">org.apache.activemq:activemq-all:jar:5.15.3</node>
+            <node x="242.93333333333334" y="158.0">com.google.maps:google-maps-services:jar:0.2.10</node>
+            <node x="139.67916666666667" y="79.0">com.google.maps:google-maps-services:jar:0.2.10/com.squareup.okhttp3:okhttp:jar:3.11.0</node>
+            <node x="145.67916666666667" y="0.0">com.google.maps:google-maps-services:jar:0.2.10/com.squareup.okhttp3:okhttp:jar:3.11.0/com.squareup.okio:okio:jar:1.14.0</node>
+            <node x="235.86666666666667" y="79.0">com.google.maps:google-maps-services:jar:0.2.10/joda-time:joda-time:jar:2.10</node>
+            <node x="339.8666666666667" y="79.0">com.google.maps:google-maps-services:jar:0.2.10/com.google.code.gson:gson:jar:2.8.5</node>
+            <node x="423.3041666666667" y="79.0">com.google.maps:google-maps-services:jar:0.2.10/org.slf4j:slf4j-api:jar:1.7.25</node>
+            <node x="439.3041666666667" y="158.0">org.slf4j:slf4j-nop:jar:1.7.25</node>
+            <node x="538.3041666666667" y="158.0">javax:javaee-api:jar:8.0</node>
+            <node x="539.3041666666667" y="79.0">javax:javaee-api:jar:8.0/com.sun.mail:javax.mail:jar:1.6.0</node>
+            <node x="539.3041666666667" y="0.0">javax:javaee-api:jar:8.0/com.sun.mail:javax.mail:jar:1.6.0/javax.activation:activation:jar:1.1</node>
+            <node x="644.3041666666667" y="158.0">org.freemarker:freemarker:jar:2.3.28</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="java-ex-new:java-ex-new:1.0-SNAPSHOT" target="com.google.maps:google-maps-services:jar:0.2.10">
+              <point x="-8.0" y="-14.5" />
+              <point x="382.3666666666667" y="207.0" />
+              <point x="317.43333333333334" y="207.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="junit:junit:jar:4.11" target="junit:junit:jar:4.11/org.hamcrest:hamcrest-core:jar:1.3">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="java-ex-new:java-ex-new:1.0-SNAPSHOT" target="junit:junit:jar:4.11">
+              <point x="-40.0" y="-14.5" />
+              <point x="350.3666666666667" y="227.0" />
+              <point x="54.5" y="227.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="com.google.maps:google-maps-services:jar:0.2.10" target="com.google.maps:google-maps-services:jar:0.2.10/com.google.code.gson:gson:jar:2.8.5">
+              <point x="18.625" y="-14.5" />
+              <point x="336.05833333333334" y="128.0" />
+              <point x="368.8666666666667" y="128.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="com.google.maps:google-maps-services:jar:0.2.10" target="com.google.maps:google-maps-services:jar:0.2.10/org.slf4j:slf4j-api:jar:1.7.25">
+              <point x="55.875" y="-14.5" />
+              <point x="373.30833333333334" y="138.0" />
+              <point x="441.8041666666667" y="138.0" />
+              <point x="-18.5" y="14.5" />
+            </edge>
+            <edge source="java-ex-new:java-ex-new:1.0-SNAPSHOT" target="org.freemarker:freemarker:jar:2.3.28">
+              <point x="40.0" y="-14.5" />
+              <point x="430.3666666666667" y="227.0" />
+              <point x="688.8041666666667" y="227.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="javax:javaee-api:jar:8.0/com.sun.mail:javax.mail:jar:1.6.0" target="javax:javaee-api:jar:8.0/com.sun.mail:javax.mail:jar:1.6.0/javax.activation:activation:jar:1.1">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="java-ex-new:java-ex-new:1.0-SNAPSHOT" target="javax:javaee-api:jar:8.0">
+              <point x="24.0" y="-14.5" />
+              <point x="414.3666666666667" y="217.0" />
+              <point x="581.3041666666667" y="217.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="java-ex-new:java-ex-new:1.0-SNAPSHOT" target="org.apache.activemq:activemq-all:jar:5.15.3">
+              <point x="-24.0" y="-14.5" />
+              <point x="366.3666666666667" y="217.0" />
+              <point x="173.93333333333334" y="217.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="java-ex-new:java-ex-new:1.0-SNAPSHOT" target="org.slf4j:slf4j-nop:jar:1.7.25">
+              <point x="8.0" y="-14.5" />
+              <point x="398.3666666666667" y="207.0" />
+              <point x="478.8041666666667" y="207.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="com.google.maps:google-maps-services:jar:0.2.10" target="com.google.maps:google-maps-services:jar:0.2.10/joda-time:joda-time:jar:2.10">
+              <point x="-18.625" y="-14.5" />
+              <point x="298.80833333333334" y="138.0" />
+              <point x="277.8666666666667" y="138.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="com.google.maps:google-maps-services:jar:0.2.10" target="com.google.maps:google-maps-services:jar:0.2.10/com.squareup.okhttp3:okhttp:jar:3.11.0">
+              <point x="-55.875" y="-14.5" />
+              <point x="261.55833333333334" y="138.0" />
+              <point x="173.17916666666667" y="138.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="org.slf4j:slf4j-nop:jar:1.7.25" target="com.google.maps:google-maps-services:jar:0.2.10/org.slf4j:slf4j-api:jar:1.7.25">
+              <point x="0.0" y="-14.5" />
+              <point x="18.5" y="14.5" />
+            </edge>
+            <edge source="javax:javaee-api:jar:8.0" target="javax:javaee-api:jar:8.0/com.sun.mail:javax.mail:jar:1.6.0">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="com.google.maps:google-maps-services:jar:0.2.10/com.squareup.okhttp3:okhttp:jar:3.11.0" target="com.google.maps:google-maps-services:jar:0.2.10/com.squareup.okhttp3:okhttp:jar:3.11.0/com.squareup.okio:okio:jar:1.14.0">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.7320954907161804" x="317.82608695652175" y="83.36231884057975" />
+          <SelectedNodes>
+            <node>java-ex-new:java-ex-new:1.0-SNAPSHOT</node>
+          </SelectedNodes>
+          <Categories />
+          <VISIBILITY>All</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ex4/GeocodingApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
+        <state relative-caret-position="527">
+          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1783#1784#0" expanded="true" />
+            <element signature="e#1846#1847#0" expanded="true" />
+            <element signature="e#3178#3179#0" expanded="true" />
+            <element signature="e#3269#3270#0" expanded="true" />
+            <element signature="e#3343#3344#0" expanded="true" />
+            <element signature="e#3389#3390#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -569,19 +715,112 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ex1/QueueImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="e#168#169#0" expanded="true" />
+            <element signature="e#202#203#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ex4/GeocodingServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        <state relative-caret-position="320">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>jjdd4-ex-new</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.google.code.gson:gson:2.8.5</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
