@@ -23,7 +23,7 @@ public class Consumer implements Runnable, ExceptionListener, javax.jms.Exceptio
 
             Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
 
-            Destination destination = session.createQueue("PP.MSG.QUEUE");
+            Destination destination = session.createTopic("PP.MSG.TOPIC");
 
             MessageConsumer consumer = session.createConsumer(destination);
 

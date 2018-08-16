@@ -1,13 +1,7 @@
 package ex3;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
-import javax.jms.Connection;
-import javax.jms.ConnectionFactory;
-import javax.jms.DeliveryMode;
-import javax.jms.Destination;
-import javax.jms.JMSException;
-import javax.jms.MessageProducer;
-import javax.jms.Session;
+import javax.jms.*;
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -22,7 +16,7 @@ public class Producer {
 
         Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
 
-        Destination destination = session.createQueue("PP.MSG.QUEUE");
+        Destination destination = session.createTopic("PP.TOPIC");
 
         MessageProducer producer = session.createProducer(destination);
         producer.setDeliveryMode(DeliveryMode.NON_PERSISTENT);
