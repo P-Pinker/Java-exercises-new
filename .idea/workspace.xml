@@ -63,8 +63,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ex4/GeocodingServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="788">
-              <caret line="47" column="90" selection-start-line="47" selection-start-column="90" selection-end-line="47" selection-end-column="90" />
+            <state relative-caret-position="544">
+              <caret line="32" column="52" lean-forward="true" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -178,56 +178,6 @@
               <item name="javaexnew" type="b2602c69:ProjectViewProjectNode" />
               <item name="jjdd4-ex-new" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="javaexnew" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jjdd4-ex-new" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaexnew" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jjdd4-ex-new" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaexnew" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jjdd4-ex-new" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaexnew" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jjdd4-ex-new" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ex4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaexnew" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jjdd4-ex-new" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaexnew" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jjdd4-ex-new" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaexnew" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jjdd4-ex-new" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="fm-templates" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -239,7 +189,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534507111892" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534507147299" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../JavaEE/usersengine" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -364,7 +314,7 @@
       <option name="presentableId" value="Default" />
       <updated>1534245458979</updated>
       <workItem from="1534245463316" duration="9239000" />
-      <workItem from="1534326652862" duration="29759000" />
+      <workItem from="1534326652862" duration="30044000" />
     </task>
     <servers />
   </component>
@@ -386,11 +336,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38998000" />
+    <option name="totallyTimeSpent" value="39283000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Web" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25189108" />
@@ -404,7 +353,7 @@
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -775,8 +724,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ex4/GeocodingServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="788">
-          <caret line="47" column="90" selection-start-line="47" selection-start-column="90" selection-end-line="47" selection-end-column="90" />
+        <state relative-caret-position="544">
+          <caret line="32" column="52" lean-forward="true" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
