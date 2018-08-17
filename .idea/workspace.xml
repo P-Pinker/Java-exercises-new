@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1382b4a7-4253-42dd-9d68-91e75ace8707" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Geocoding.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ex4/GeocodingServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ex4/GeocodingServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/fm-templates/geocoding.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/fm-templates/geocoding.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ex1/Queue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ex1/Queue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ex1/QueueImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ex1/QueueImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ex2/Stack.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ex2/Stack.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ex2/StackImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ex2/StackImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ex3/Consumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ex3/Consumer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ex3/Producer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ex3/Producer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/AppTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ex1/QueueTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ex1/QueueTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ex2/StackTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ex2/StackTest.class" afterDir="false" />
-    </list>
+    <list default="true" id="1382b4a7-4253-42dd-9d68-91e75ace8707" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -255,7 +239,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534506656439" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534507111892" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../JavaEE/usersengine" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -380,7 +364,7 @@
       <option name="presentableId" value="Default" />
       <updated>1534245458979</updated>
       <workItem from="1534245463316" duration="9239000" />
-      <workItem from="1534326652862" duration="29381000" />
+      <workItem from="1534326652862" duration="29759000" />
     </task>
     <servers />
   </component>
@@ -402,7 +386,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38620000" />
+    <option name="totallyTimeSpent" value="38998000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
