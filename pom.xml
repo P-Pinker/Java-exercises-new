@@ -7,6 +7,7 @@
   <groupId>java-ex-new</groupId>
   <artifactId>java-ex-new</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <packaging>war</packaging>
 
   <name>java-ex-new</name>
   <!-- FIXME change it to the project's website -->

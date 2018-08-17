@@ -30,7 +30,6 @@ public class GeocodingServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doGet(req, resp);
 
         Template template = templateProvider.getTemplate(getServletContext(), "geocoding.ftlh");
         Map<String, Object> model = new HashMap<>();
@@ -45,9 +44,6 @@ public class GeocodingServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doPost(req, resp);
-
-        final String GOOGLE_API_KEY = "AIzaSyDWcJR9h8NGAeZFqiZhdbW6PxHO0kNuPRg";
 
         String input = String.valueOf(req.getParameterValues("address"));
 
