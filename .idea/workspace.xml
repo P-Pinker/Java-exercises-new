@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1382b4a7-4253-42dd-9d68-91e75ace8707" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JJD-zadania-po-kursie/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JJD-zadania-po-kursie/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JJD-zadania-po-kursie/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JJD-zadania-po-kursie/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JJD-zadania-po-kursie/ISA - Zadania.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JJD-zadania-po-kursie/JJD-zadania-po-kursie.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JJD-zadania-po-kursie/UnitConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JJD-zadania-po-kursie/UnitConverterTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ex4/GeocodingServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ex4/GeocodingServlet.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,17 +20,18 @@
           <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.62" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="0-SNAPSHOT" value="1" />
           <entry key="ftlh" value="3" />
-          <entry key="gitignore" value="1" />
+          <entry key="gitignore" value="3" />
           <entry key="html" value="2" />
           <entry key="iml" value="1" />
-          <entry key="java" value="23" />
+          <entry key="java" value="24" />
           <entry key="xml" value="9" />
         </counts>
       </usages-collector>
@@ -48,8 +40,8 @@
           <entry key="FTL" value="3" />
           <entry key="HTML" value="2" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="23" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="JAVA" value="24" />
+          <entry key="PLAIN_TEXT" value="3" />
           <entry key="UML" value="1" />
           <entry key="XML" value="9" />
         </counts>
@@ -57,7 +49,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="ftlh" value="78" />
-          <entry key="gitignore" value="26" />
+          <entry key="gitignore" value="31" />
           <entry key="html" value="7" />
           <entry key="java" value="1704" />
           <entry key="xml" value="35" />
@@ -68,24 +60,22 @@
           <entry key="FTL" value="78" />
           <entry key="HTML" value="7" />
           <entry key="JAVA" value="1704" />
-          <entry key="PLAIN_TEXT" value="26" />
+          <entry key="PLAIN_TEXT" value="31" />
           <entry key="XML" value="35" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ex4/GeocodingServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="435">
+              <caret line="48" column="116" lean-forward="true" selection-start-line="48" selection-start-column="116" selection-end-line="48" selection-end-column="116" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -159,10 +149,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="656" />
-    <option name="height" value="456" />
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="652" />
+    <option name="height" value="492" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -170,6 +160,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -177,12 +168,37 @@
               <item name="javaexnew" type="b2602c69:ProjectViewProjectNode" />
               <item name="jjdd4-ex-new" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="javaexnew" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jjdd4-ex-new" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaexnew" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jjdd4-ex-new" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaexnew" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jjdd4-ex-new" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaexnew" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jjdd4-ex-new" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ex4" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -317,6 +333,7 @@
       <updated>1534245458979</updated>
       <workItem from="1534245463316" duration="9239000" />
       <workItem from="1534326652862" duration="30044000" />
+      <workItem from="1534659344238" duration="1090000" />
     </task>
     <servers />
   </component>
@@ -338,10 +355,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40073000" />
+    <option name="totallyTimeSpent" value="41163000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25567323" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -662,9 +680,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JJD-zadania-po-kursie/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/JJD-zadania-po-kursie/.idea/workspace.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/fm-templates/geocoding.ftlh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -679,6 +695,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/JJD-zadania-po-kursie/.idea/misc.xml" />
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ex4/GeocodingServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -686,19 +713,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JJD-zadania-po-kursie/.idea/misc.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
