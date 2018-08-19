@@ -28,7 +28,7 @@
         <counts>
           <entry key="0-SNAPSHOT" value="1" />
           <entry key="ftlh" value="3" />
-          <entry key="gitignore" value="3" />
+          <entry key="gitignore" value="4" />
           <entry key="html" value="2" />
           <entry key="iml" value="1" />
           <entry key="java" value="24" />
@@ -41,7 +41,7 @@
           <entry key="HTML" value="2" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="JAVA" value="24" />
-          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="PLAIN_TEXT" value="4" />
           <entry key="UML" value="1" />
           <entry key="XML" value="9" />
         </counts>
@@ -49,7 +49,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="ftlh" value="78" />
-          <entry key="gitignore" value="31" />
+          <entry key="gitignore" value="37" />
           <entry key="html" value="7" />
           <entry key="java" value="1704" />
           <entry key="xml" value="35" />
@@ -60,7 +60,7 @@
           <entry key="FTL" value="78" />
           <entry key="HTML" value="7" />
           <entry key="JAVA" value="1704" />
-          <entry key="PLAIN_TEXT" value="31" />
+          <entry key="PLAIN_TEXT" value="37" />
           <entry key="XML" value="35" />
         </counts>
       </usages-collector>
@@ -68,7 +68,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ex4/GeocodingServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="435">
@@ -76,6 +76,15 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -206,7 +215,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534659004884" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534680752189" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../JavaEE/usersengine" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -333,7 +342,7 @@
       <updated>1534245458979</updated>
       <workItem from="1534245463316" duration="9239000" />
       <workItem from="1534326652862" duration="30044000" />
-      <workItem from="1534659344238" duration="1090000" />
+      <workItem from="1534659344238" duration="1439000" />
     </task>
     <servers />
   </component>
@@ -355,7 +364,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41163000" />
+    <option name="totallyTimeSpent" value="41512000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -699,13 +708,6 @@
     <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ex4/GeocodingServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -713,6 +715,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
         </state>
       </provider>
     </entry>
