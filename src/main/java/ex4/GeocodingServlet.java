@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.net.URLEncoder;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Level;
@@ -45,7 +46,7 @@ public class GeocodingServlet extends HttpServlet {
 
         String input = req.getParameter("address");
         input.replaceAll("\\s", "%2520").trim();
-        resp.sendRedirect("https://google-developers.appspot.com/maps/documentation/utils/geocoder/#q%3D" + input);
+        resp.sendRedirect("https://google-developers.appspot.com/maps/documentation/utils/geocoder/#q%3D" + URLEncoder.encode(input));
 
     }
 }
