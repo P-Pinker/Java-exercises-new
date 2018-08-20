@@ -16,7 +16,7 @@ public class Producer {
 
         Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
 
-        Destination destination = session.createTopic("PP.TOPIC");
+        Destination destination = session.createTopic("PP.MSG.TOPIC");
 
         MessageProducer producer = session.createProducer(destination);
         producer.setDeliveryMode(DeliveryMode.NON_PERSISTENT);
