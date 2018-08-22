@@ -39,20 +39,6 @@ public class AppExceptionHandler extends HttpServlet {
             if (requestUri == null) {
                 requestUri = "Unknown";
             }
-//
-//        if (statusCode == 400){
-//            response.sendRedirect("/400");
-//        } else if (statusCode == 404) {
-//            response.sendRedirect("/404");
-//        } else if (statusCode == 500) {
-//            response.sendRedirect("/500");
-//        } else if (statusCode == 502) {
-//            response.sendRedirect("/502");
-//        } else if (statusCode == 505) {
-//            response.sendRedirect("/505");
-//        } else {
-//            response.sendRedirect("/error");
-//        }
 
         response.setContentType("text/html");
 
@@ -62,7 +48,7 @@ public class AppExceptionHandler extends HttpServlet {
             out.write("<h3>Szczegóły:</h3>");
             out.write("<strong>Status</strong>:"+statusCode+"<br>");
             out.write("<strong>URI</strong>:"+requestUri);
-        }else{
+        } else {
             out.write("<h3>Szczegóły</h3>");
             out.write("<ul><li>Servlet:"+servletName+"</li>");
             out.write("<li>Wyjątek:"+throwable.getClass().getName()+"</li>");
@@ -71,8 +57,8 @@ public class AppExceptionHandler extends HttpServlet {
             out.write("</ul>");
         }
 
-//        out.write("<br><br>");
-//        out.write("<a href=\"index.html\">Home Page</a>");
+        out.write("<br><br>");
+        out.write("<a href=\"index.html\">Strona główna</a>");
         out.write("</body></html>");
     }
 
