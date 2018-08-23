@@ -49,13 +49,14 @@ public class ShowHTMLServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        URL url = new URL(req.getParameter("address"));
-        getHtml(url);
+        URL url = new URL(req.getParameter("url"));
+        showHtml(url);
 //        resp.sendRedirect(URLEncoder.encode(url));
     }
 
-    private void getHtml (URL url){
-        htmlContent.showHtml();
+    private void showHtml (URL url){
+        htmlContent.start(url);
+//        htmlContent.showHtml();
     }
 
 }

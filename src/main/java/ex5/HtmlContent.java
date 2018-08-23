@@ -9,17 +9,17 @@ public class HtmlContent extends JFrame {
 
     private final static Logger logger = Logger.getLogger(ShowHTMLServlet.class.getName());
 
-    public void showHtml() {
+//    public void showHtml() {
+//
+//        new HtmlContent().start();
+//
+//    }
 
-        new HtmlContent().start();
-
-    }
-
-    void start() {
+    void start(URL u) {
 
         try {
-            URL u = new URL();
-            JEditorPane ed = new JEditorPane(u);
+            URL url = new URL(u.toString());
+            JEditorPane ed = new JEditorPane(url);
             add(ed);
             setVisible(true);
             setSize(600,600);
