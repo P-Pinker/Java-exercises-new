@@ -1,9 +1,11 @@
 package ex5;
 
+import com.gargoylesoftware.htmlunit.WebClient;
+import com.gargoylesoftware.htmlunit.WebResponse;
+import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import freemarker.TemplateProvider;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
-
 
 import javax.inject.Inject;
 import javax.servlet.ServletException;
@@ -13,11 +15,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.net.URL;
-import java.net.URLEncoder;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.io.PrintWriter;
+
 
 
 @WebServlet("/showHTML")
@@ -49,14 +52,34 @@ public class ShowHTMLServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        URL url = new URL(req.getParameter("url"));
-        showHtml(url);
-//        resp.sendRedirect(URLEncoder.encode(url));
-    }
+        try {
+            PrintWriter out = resp.getWriter();
+            URL url = new URL(req.getParameter("url"));
+            WebClient webClient = new WebClient();
+            String urlString = url.toString();
+            HtmlPage page = webClient.getPage(urlString);
+            WebResponse response = page.getWebResponse();
+            String content = response.getContentAsString();
+            out.write(content);
+        } catch (Exception e) {
+            logger.log(Level.INFO, e.getMessage());
+        }
 
-    private void showHtml (URL url){
-        htmlContent.start(url);
-//        htmlContent.showHtml();
+
+//
+//        getHtmlSourceCode(url);
+//
+//    }
+//
+//    private void getHtml (URL url){
+//
+//        htmlContent.getHtmlSourceCode(url);
+//
+//    }
+//
+//    void getHtmlSourceCode (URL u) {
+
+
     }
 
 }
