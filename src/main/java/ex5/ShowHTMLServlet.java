@@ -33,7 +33,8 @@ public class ShowHTMLServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        Template template = templateProvider.getTemplate(getServletContext(), "ShowHTML.ftlh");
+        resp.setContentType("text/html;charset=UTF-8");
+        Template template = templateProvider.getTemplate(getServletContext(), "GetHTML.ftlh");
         Map<String, Object> model = new HashMap<>();
 
         try {
@@ -47,23 +48,60 @@ public class ShowHTMLServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
+        resp.setContentType("text/html;charset=UTF-8");
+        Template template = templateProvider.getTemplate(getServletContext(), "DisplayHTML.ftlh");
+        Map<String, Object> model = new HashMap<>();
+        PrintWriter out = resp.getWriter();
 
         try {
-            PrintWriter out = resp.getWriter();
+
             URL url = new URL(req.getParameter("url"));
             WebClient webClient = new WebClient();
-            String urlString = url.toString();
-            HtmlPage page = webClient.getPage(urlString);
+            webClient.getOptions().setJavaScriptEnabled(false);
+            webClient.getOptions().setCssEnabled(false);
+            HtmlPage page = webClient.getPage(url);
 
             if (!page.isHtmlPage()) {
                 out.write("Wybrana strona nie jest stroną HTML");
+            } else {
+                String content = page.getWebResponse().getContentAsString();
+                model.put("contentHtml", content);
+                template.process(model, resp.getWriter());
             }
 
-            out.write(page.getWebResponse().getContentAsString());
         } catch (Exception e) {
             logger.log(Level.INFO, e.getMessage());
         }
-
     }
-
 }
+
+
+//
+//        try {
+//            PrintWriter out = resp.getWriter();
+//            URL url = new URL(req.getParameter("url"));
+//            URLConnection connection = url.openConnection();
+//            BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+//            String content;
+//            WebClient webClient = new WebClient();
+//            webClient.getOptions().setJavaScriptEnabled(true);
+//            webClient.getOptions().setCssEnabled(false);
+//            HtmlPage page1 = webClient.getPage(url);
+//
+//            if (!page1.isHtmlPage()) {
+//                out.write("Wybrana strona nie jest stroną HTML");
+//            } else {
+//                while ((content = in.readLine()) != null) {
+//                    out.write(content);
+//                }
+//            }
+//            in.close();
+//        } catch (Exception e) {
+//            logger.log(Level.INFO, e.getMessage());
+//        }
+//    }
+//}
+
+
+
+
