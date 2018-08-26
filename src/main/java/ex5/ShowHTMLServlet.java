@@ -1,7 +1,6 @@
 package ex5;
 
 import com.gargoylesoftware.htmlunit.WebClient;
-import com.gargoylesoftware.htmlunit.WebResponse;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import freemarker.TemplateProvider;
 import freemarker.template.Template;
@@ -22,7 +21,6 @@ import java.util.logging.Logger;
 import java.io.PrintWriter;
 
 
-
 @WebServlet("/showHTML")
 public class ShowHTMLServlet extends HttpServlet {
 
@@ -30,9 +28,6 @@ public class ShowHTMLServlet extends HttpServlet {
 
     @Inject
     private TemplateProvider templateProvider;
-
-    @Inject
-    private HtmlContent htmlContent;
 
 
     @Override
@@ -52,33 +47,22 @@ public class ShowHTMLServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
+
         try {
             PrintWriter out = resp.getWriter();
             URL url = new URL(req.getParameter("url"));
             WebClient webClient = new WebClient();
             String urlString = url.toString();
             HtmlPage page = webClient.getPage(urlString);
-            WebResponse response = page.getWebResponse();
-            String content = response.getContentAsString();
-            out.write(content);
+
+            if (!page.isHtmlPage()) {
+                out.write("Wybrana strona nie jest stroną HTML");
+            }
+
+            out.write(page.getWebResponse().getContentAsString());
         } catch (Exception e) {
             logger.log(Level.INFO, e.getMessage());
         }
-
-
-//
-//        getHtmlSourceCode(url);
-//
-//    }
-//
-//    private void getHtml (URL url){
-//
-//        htmlContent.getHtmlSourceCode(url);
-//
-//    }
-//
-//    void getHtmlSourceCode (URL u) {
-
 
     }
 
