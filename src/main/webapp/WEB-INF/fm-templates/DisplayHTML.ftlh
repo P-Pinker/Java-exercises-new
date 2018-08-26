@@ -5,6 +5,6 @@
     <title>Title</title>
 </head>
 <body>
-${contentHtml.content}
+<code>${contentHtml}</code>
 </body>
 </html>

@@ -74,34 +74,3 @@ public class ShowHTMLServlet extends HttpServlet {
         }
     }
 }
-
-
-//
-//        try {
-//            PrintWriter out = resp.getWriter();
-//            URL url = new URL(req.getParameter("url"));
-//            URLConnection connection = url.openConnection();
-//            BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-//            String content;
-//            WebClient webClient = new WebClient();
-//            webClient.getOptions().setJavaScriptEnabled(true);
-//            webClient.getOptions().setCssEnabled(false);
-//            HtmlPage page1 = webClient.getPage(url);
-//
-//            if (!page1.isHtmlPage()) {
-//                out.write("Wybrana strona nie jest stroną HTML");
-//            } else {
-//                while ((content = in.readLine()) != null) {
-//                    out.write(content);
-//                }
-//            }
-//            in.close();
-//        } catch (Exception e) {
-//            logger.log(Level.INFO, e.getMessage());
-//        }
-//    }
-//}
-
-
-
-
