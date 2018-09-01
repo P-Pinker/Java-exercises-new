@@ -1,7 +1,6 @@
 package ex6;
 
-import org.slf4j.LoggerFactory;
-
+import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Scanner;
 import java.util.logging.Level;
@@ -21,17 +20,48 @@ public class GetMethodsAndSize {
             try {
                 url = new URL(scanner.next());
             } catch (Exception e) {
-                System.out.println("Niepoprawny adres. Spróbuj jeszcze raz");
+                System.out.println("Wystąpił błąd. Spróbuj jeszcze raz");
                 logger.log(Level.INFO, e.getMessage());
             }
         }
     }
 
-    
+    private boolean checkIfWebsiteExists() {
+
+        boolean websiteExists;
+
+        try {
+            HttpURLConnection.setFollowRedirects(false);
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setRequestMethod("HEAD");
+            int responseCode = connection.getResponseCode();
+//            String responseMessage = connection.getResponseMessage();
+
+            if (responseCode != 200) {
+                System.out.println("Wystąpił błąd - strona nie istnieje");
+                websiteExists = false;
+            } else {
+                websiteExists = true;
+            }
+
+            return websiteExists;
+
+        } catch (Exception e) {
+            System.out.println("Wystąpił błąd");
+            logger.log(Level.INFO, e.getMessage());
+        }
+
+        return false;
+
+    }
+
 
     public static void main(String[] args) {
 
-//        getUrl();
+        GetMethodsAndSize getMethodsAndSize = new GetMethodsAndSize();
+        System.out.println("Podaj adres URL, dla którego chcesz poznać dostępne metody i rozmiar zasobu");
+        getMethodsAndSize.getUrl();
+
 
     }
 
