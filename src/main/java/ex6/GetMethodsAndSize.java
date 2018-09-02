@@ -5,12 +5,12 @@ import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpHead;
+import org.apache.http.client.methods.HttpOptions;
 import org.apache.http.impl.client.HttpClientBuilder;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.net.URLConnection;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -23,7 +23,25 @@ public class GetMethodsAndSize {
 
     private URL url = null;
 
-    private void getUrl() {
+    public static void main(String[] args) {
+
+        GetMethodsAndSize getMethodsAndSize = new GetMethodsAndSize();
+
+        System.out.println("Podaj adres URL, dla którego chcesz poznać dostępne metody i rozmiar zasobu");
+
+        if (getMethodsAndSize.getUrlIfExists()) {
+            System.out.println("Content Length: " + getMethodsAndSize.getContentLength());
+            System.out.println("Available methods: " + getMethodsAndSize.getHttpMethods());
+        } else if (!getMethodsAndSize.getUrlIfExists()) {
+            System.out.println("Wystąpił błąd - strona nie istnieje.");
+            System.exit(1);
+        } else {
+            System.out.println("Wystąpił błąd");
+        }
+
+    }
+
+    private boolean getUrlIfExists() {
 
         while (url == null) {
             try {
@@ -33,36 +51,29 @@ public class GetMethodsAndSize {
                 logger.log(Level.INFO, e.getMessage());
             }
         }
-    }
-
-    private boolean checkIfWebsiteExists() {
-
-        boolean websiteExists;
 
         try {
             HttpURLConnection.setFollowRedirects(false);
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("HEAD");
             int responseCode = connection.getResponseCode();
-//            String responseMessage = connection.getResponseMessage();
 
-            if (responseCode != 200) {
-                System.out.println("Wystąpił błąd - strona nie istnieje");
-                websiteExists = false;
+            if (responseCode == 404) {
+                return false;
             } else {
-                websiteExists = true;
+                return true;
             }
 
-            return websiteExists;
-
         } catch (Exception e) {
-            System.out.println("Wystąpił błąd");
             logger.log(Level.INFO, e.getMessage());
         }
 
         return false;
 
     }
+
+//    private boolean checkIfWebsiteExists() {
+
 
     private Long getContentLength () {
 
@@ -78,50 +89,41 @@ public class GetMethodsAndSize {
             Header[] clHeaders = response.getHeaders("Content-Length");
 
             if (clHeaders.length > 0) {
-                Header header=clHeaders[0];
+                Header header = clHeaders[0];
                 return Long.parseLong(header.getValue());
             }
 
         } catch (Exception e) {
-            System.out.println("Wystąpił błąd");
             logger.log(Level.INFO, e.getMessage());
         }
 
         return (long) -1;
 
-//        try {
-//            URLConnection uc = url.openConnection();
-//            int contentLength = uc.getContentLength();
-//            return String.valueOf(contentLength);
-//        } catch (Exception e) {
-//            System.out.println("Wystąpił błąd");
-//            logger.log(Level.INFO, e.getMessage());
-//        }
-//
-//        return "Brak danych";
-
     }
 
 
-    private void getHttpMethods(){
+    private String getHttpMethods(){
 
-        
+        try {
+            HttpClient client = HttpClientBuilder.create().build();
+            HttpOptions request = new HttpOptions(String.valueOf(url));
+            HttpResponse response = client.execute(request);
 
-    }
+            if (response.containsHeader("Allow")){
+                return response.getFirstHeader("Allow").getValue();
+            } else if (response.containsHeader("Access-Control-Allow-Methods")) {
+                return response.getFirstHeader("Access-Control-Allow-Methods").getValue();
+            }
 
-
-    public static void main(String[] args) {
-
-        GetMethodsAndSize getMethodsAndSize = new GetMethodsAndSize();
-        System.out.println("Podaj adres URL, dla którego chcesz poznać dostępne metody i rozmiar zasobu");
-        getMethodsAndSize.getUrl();
-
-        if (getMethodsAndSize.checkIfWebsiteExists()){
-            System.out.println("Content Length: " + getMethodsAndSize.getContentLength());
-            System.out.println("Available methods: " + getMethodsAndSize.getHttpMethods());
-        } else {
-            System.out.println("Coś poszło nie tak.");
+        } catch (Exception e) {
+            logger.log(Level.INFO, e.getMessage());
         }
+
+//        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+//        connection.setRequestMethod("OPTIONS");
+//        System.out.println(connection.getHeaderField("Allow"));
+
+        return "Brak danych";
 
     }
 
