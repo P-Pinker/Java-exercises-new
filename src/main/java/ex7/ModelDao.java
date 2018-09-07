@@ -19,7 +19,7 @@ public class ModelDao {
         return (double) (loanDouble + (loanDouble * profit / 100)) / numberOfMonths;
     }
 
-    public List<Double> getRemainingAmmountToPaybackMonthly (BigDecimal loan, int numberOfMonths, double profit) {
+    public List<Double> getRemainingAmountToPaybackMonthly (BigDecimal loan, int numberOfMonths, double profit) {
         double loanDouble = loan.doubleValue();
         double rate = (double) (loanDouble + (loanDouble * profit / 100)) / numberOfMonths;
         double remainingAmount;
