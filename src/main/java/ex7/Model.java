@@ -47,4 +47,15 @@ public class Model {
     public void setMarkup(Double commission) {
         this.markup = markup;
     }
+
+    @Override
+    public String toString() {
+        return "Loan info {" +
+                "loan=" + loan +
+                ", months=" + months +
+                ", profit=" + profit +
+                ", markup=" + markup +
+                '}';
+    }
+
 }
