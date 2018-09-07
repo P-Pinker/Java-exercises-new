@@ -25,8 +25,8 @@ public class ModelDao {
         double remainingAmount;
         List<Double> RemainingAmountToPayBackMonthly = new ArrayList<>();
 
-        for (int i = 1; i <= numberOfMonths; i++) {
-            remainingAmount = loanDouble - rate;
+        for (int i = 0; i < numberOfMonths; i++) {
+            remainingAmount = loanDouble - (rate * i);
             RemainingAmountToPayBackMonthly.add(remainingAmount);
         }
 
