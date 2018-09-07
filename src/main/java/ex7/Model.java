@@ -7,13 +7,13 @@ public class Model {
     private BigDecimal loan;
     private Integer months;
     private Double profit;
-    private Double commission;
+    private Double markup;
 
-    public Model(BigDecimal loan, Integer months, Double profit, Double commission) {
+    public Model(BigDecimal loan, Integer months, Double profit, Double markup) {
         this.loan = loan;
         this.months = months;
         this.profit = profit;
-        this.commission = commission;
+        this.markup = markup;
     }
 
     public BigDecimal getLoan() {
@@ -40,11 +40,11 @@ public class Model {
         this.profit = profit;
     }
 
-    public Double getCommission() {
-        return commission;
+    public Double getMarkup() {
+        return markup;
     }
 
-    public void setCommission(Double commission) {
-        this.commission = commission;
+    public void setMarkup(Double commission) {
+        this.markup = markup;
     }
 }
