@@ -11,7 +11,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -49,12 +51,48 @@ public class LoanInfoServlet extends HttpServlet {
         Template template = templateProvider.getTemplate(getServletContext(), "LoanSimulator.ftlh");
         Map<String, Object> model = new HashMap<>();
 
+        List<Integer> months = modelDao.getMonth(parseToInteger(req.getParameter("months")));
+        model.put("months", months);
+
+        double rate = modelDao.getRate(
+                parseToBigDecimal(req.getParameter("loan")),
+                parseToInteger(req.getParameter("months")),
+                parseToDouble(req.getParameter("profit")));
+        model.put("rate", rate);
+
+        List<Double> remainingMoneyToPayback = modelDao.getRemainingAmountToPaybackMonthly(
+                parseToBigDecimal(req.getParameter("loan")),
+                parseToInteger(req.getParameter("months")),
+                parseToDouble(req.getParameter("profit")));
+        model.put("remainingMoneyToPayback", remainingMoneyToPayback);
+
+        double APR = modelDao.getAnnualPercentageRate(parseToDouble(req.getParameter("profit")));
+        model.put("ARP", APR);
+
+        double totalCostOfCredit = modelDao.getTotalCostOfCredit(
+                parseToBigDecimal(req.getParameter("loan")),
+                parseToDouble(req.getParameter("profit")),
+                parseToDouble(req.getParameter("markup")));
+        model.put("totalCostOfCredit", totalCostOfCredit);
+
         try {
             template.process(model, resp.getWriter());
         } catch (TemplateException e) {
             logger.log(Level.SEVERE, e.getMessage());
         }
 
+    }
+
+    private int parseToInteger(Object o) {
+        return Integer.parseInt(o.toString());
+    }
+
+    private Double parseToDouble(Object o) {
+        return Double.parseDouble(o.toString());
+    }
+
+    private BigDecimal parseToBigDecimal(Object o) {
+        return BigDecimal.valueOf(parseToDouble(o));
     }
 
 }
