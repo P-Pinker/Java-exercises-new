@@ -16,7 +16,7 @@ import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-@WebServlet("/loanInfo")
+@WebServlet("/loanSimulator")
 public class LoanInfoServlet extends HttpServlet {
 
     private final static Logger logger = Logger.getLogger(LoanInfoServlet.class.getName());
@@ -24,12 +24,14 @@ public class LoanInfoServlet extends HttpServlet {
     @Inject
     private TemplateProvider templateProvider;
 
+    @Inject
+    private ModelDao modelDao;
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         resp.setContentType("text/html;charset=UTF-8");
-        Template template = templateProvider.getTemplate(getServletContext(), "LoanInput.ftlh");
+        Template template = templateProvider.getTemplate(getServletContext(), "LoanSimulator.ftlh");
         Map<String, Object> model = new HashMap<>();
 
         try {
@@ -44,7 +46,7 @@ public class LoanInfoServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         resp.setContentType("text/html;charset=UTF-8");
-        Template template = templateProvider.getTemplate(getServletContext(), "LoanOutput.ftlh");
+        Template template = templateProvider.getTemplate(getServletContext(), "LoanSimulator.ftlh");
         Map<String, Object> model = new HashMap<>();
 
         try {
