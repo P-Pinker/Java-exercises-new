@@ -5,7 +5,7 @@
 
 Uwaga: program zakłada, że raty są równe a oprocentowanie nie zmienia się w czasie.
 
-<form method="POST" target="_blank" action="/loanSimulator">
+<form method="POST" action="/loanSimulator">
     Kwota kredytu: <input type="text" name="loan" required/><br/><br/>
     Okres kredytowania (w miesiącach): <input type="text" name="months" required/><br/><br/>
     Marża banku (w procentach): <input type="text" name="profit" required/><br/><br/>
