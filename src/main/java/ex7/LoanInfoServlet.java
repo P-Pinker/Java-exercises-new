@@ -27,7 +27,10 @@ public class LoanInfoServlet extends HttpServlet {
     private TemplateProvider templateProvider;
 
     @Inject
-    private ModelDao modelDao;
+    private LoanDao loanDao;
+
+    @Inject
+    private LoanMonthlyDao loanMonthlyDao;
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -51,29 +54,21 @@ public class LoanInfoServlet extends HttpServlet {
         Template template = templateProvider.getTemplate(getServletContext(), "LoanSimulator.ftlh");
         Map<String, Object> model = new HashMap<>();
 
-        List<Integer> months = modelDao.getMonth(parseToInteger(req.getParameter("months")));
-        model.put("months", months);
-
-        List<Double> rates = modelDao.getRate(
-                parseToBigDecimal(req.getParameter("loan")),
-                parseToInteger(req.getParameter("months")),
-                parseToDouble(req.getParameter("profit")));
-        model.put("rates", rates);
-
-        List<Double> remainingMoneyToPayback = modelDao.getRemainingAmountToPaybackMonthly(
-                parseToBigDecimal(req.getParameter("loan")),
-                parseToInteger(req.getParameter("months")),
-                parseToDouble(req.getParameter("profit")));
-        model.put("remainingMoneyToPayback", remainingMoneyToPayback);
-
-        double APR = modelDao.getAnnualPercentageRate(parseToDouble(req.getParameter("profit")));
+        double APR = loanDao.getAnnualPercentageRate(parseToDouble(req.getParameter("profit")));
         model.put("APR", APR);
 
-        double totalCostOfCredit = modelDao.getTotalCostOfCredit(
+        double totalCostOfCredit = loanDao.getTotalCostOfCredit(
                 parseToBigDecimal(req.getParameter("loan")),
                 parseToDouble(req.getParameter("profit")),
                 parseToDouble(req.getParameter("markup")));
         model.put("totalCostOfCredit", totalCostOfCredit);
+
+        List<LoanMonthly> loanParams = loanMonthlyDao.getLoanMonthlyParams(
+            parseToBigDecimal(req.getParameter("loan")),
+            parseToDouble(req.getParameter("profit")),
+            parseToInteger(req.getParameter("months"))
+            );
+        model.put("loanParams", loanParams);
 
         try {
             template.process(model, resp.getWriter());

@@ -2,18 +2,18 @@ package ex7;
 
 import java.math.BigDecimal;
 
-public class Model {
+public class Loan {
 
     private BigDecimal loan;
-    private Integer months;
-    private Double profit;
-    private Double markup;
+    private double profit;
+    private double markup;
+    private int months;
 
-    public Model(BigDecimal loan, Integer months, Double profit, Double markup) {
+    public Loan(BigDecimal loan, double profit, double markup, int months) {
         this.loan = loan;
-        this.months = months;
         this.profit = profit;
         this.markup = markup;
+        this.months = months;
     }
 
     public BigDecimal getLoan() {
@@ -28,7 +28,7 @@ public class Model {
         return months;
     }
 
-    public void setMonths(Integer months) {
+    public void setMonths(int months) {
         this.months = months;
     }
 
@@ -36,7 +36,7 @@ public class Model {
         return profit;
     }
 
-    public void setProfit(Double profit) {
+    public void setProfit(double profit) {
         this.profit = profit;
     }
 
@@ -44,17 +44,15 @@ public class Model {
         return markup;
     }
 
-    public void setMarkup(Double commission) {
-        this.markup = markup;
-    }
+    public void setMarkup(double markup) { this.markup = markup; }
 
     @Override
     public String toString() {
-        return "Loan info {" +
+        return "Loan{" +
                 "loan=" + loan +
-                ", months=" + months +
                 ", profit=" + profit +
                 ", markup=" + markup +
+                ", months=" + months +
                 '}';
     }
 

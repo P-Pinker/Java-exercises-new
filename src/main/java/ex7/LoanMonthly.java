@@ -4,7 +4,17 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ModelDao {
+public class LoanMonthly {
+
+    private int month;
+    private double rate;
+    private double loanLeft;
+
+    public LoanMonthly(int month, double rate, double loanLeft) {
+        this.month = month;
+        this.rate = rate;
+        this.loanLeft = loanLeft;
+    }
 
     public List<Integer> getMonth (int numberOfMonths) {
         List<Integer> months = new ArrayList<>();
@@ -12,6 +22,10 @@ public class ModelDao {
             months.add(i);
         }
         return months;
+    }
+
+    public void setMonth(int month) {
+        this.month = month;
     }
 
     public List<Double> getRate (BigDecimal loan, int numberOfMonths, double profit) {
@@ -29,11 +43,14 @@ public class ModelDao {
                 rates.add(rate);
             }
         }
-
         return rates;
     }
 
-    public List<Double> getRemainingAmountToPaybackMonthly (BigDecimal loan, int numberOfMonths, double profit) {
+    public void setRate(double rate) {
+        this.rate = rate;
+    }
+
+    public List<Double> getLoanLeft (BigDecimal loan, int numberOfMonths, double profit) {
         double loanDouble = loan.doubleValue();
         double rate = (double) (loanDouble + (loanDouble * profit / 100)) / numberOfMonths;
         double remainingAmount;
@@ -51,13 +68,17 @@ public class ModelDao {
         return RemainingAmountToPayBackMonthly;
     }
 
-    public Double getAnnualPercentageRate (double profit) {
-        return profit * 12;
+    public void setLoanLeft(double loanLeft) {
+        this.loanLeft = loanLeft;
     }
 
-    public Double getTotalCostOfCredit (BigDecimal loan, double profit, double markup) {
-        double loanDouble = loan.doubleValue();
-        return loanDouble + (loanDouble * profit / 100) + (loanDouble * markup / 100);
+    @Override
+    public String toString() {
+        return "LoanMonthly{" +
+                "month=" + month +
+                ", rate=" + rate +
+                ", loanLeft=" + loanLeft +
+                '}';
     }
 
 }
