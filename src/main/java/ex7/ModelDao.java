@@ -21,7 +21,9 @@ public class ModelDao {
 
         for (int i = 0; i < numberOfMonths; i++) {
             double remainingAmount = loanDouble - (rate * i);
-            if (rate >= remainingAmount){
+            if (remainingAmount <= 0) {
+                rates.add(0.00);
+            } else if (rate >= remainingAmount) {
                 rates.add(remainingAmount);
             } else {
                 rates.add(rate);
