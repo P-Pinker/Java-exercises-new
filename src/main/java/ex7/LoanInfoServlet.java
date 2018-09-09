@@ -54,11 +54,11 @@ public class LoanInfoServlet extends HttpServlet {
         List<Integer> months = modelDao.getMonth(parseToInteger(req.getParameter("months")));
         model.put("months", months);
 
-        double rate = modelDao.getRate(
+        List<Double> rates = modelDao.getRate(
                 parseToBigDecimal(req.getParameter("loan")),
                 parseToInteger(req.getParameter("months")),
                 parseToDouble(req.getParameter("profit")));
-        model.put("rate", rate);
+        model.put("rate", rates);
 
         List<Double> remainingMoneyToPayback = modelDao.getRemainingAmountToPaybackMonthly(
                 parseToBigDecimal(req.getParameter("loan")),
