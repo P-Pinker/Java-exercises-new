@@ -14,9 +14,21 @@ public class ModelDao {
         return months;
     }
 
-    public Double getRate (BigDecimal loan, int numberOfMonths, double profit) {
+    public List<Double> getRate (BigDecimal loan, int numberOfMonths, double profit) {
         double loanDouble = loan.doubleValue();
-        return (double) (loanDouble + (loanDouble * profit / 100)) / numberOfMonths;
+        double rate = (double) (loanDouble + (loanDouble * profit / 100)) / numberOfMonths;
+        List<Double> rates = new ArrayList<>();
+
+        for (int i = 0; i < numberOfMonths; i++) {
+            double remainingAmount = loanDouble - (rate * i);
+            if (rate >= remainingAmount){
+                rates.add(remainingAmount);
+            } else {
+                rates.add(rate);
+            }
+        }
+
+        return rates;
     }
 
     public List<Double> getRemainingAmountToPaybackMonthly (BigDecimal loan, int numberOfMonths, double profit) {
@@ -27,7 +39,11 @@ public class ModelDao {
 
         for (int i = 0; i < numberOfMonths; i++) {
             remainingAmount = loanDouble - (rate * i);
-            RemainingAmountToPayBackMonthly.add(remainingAmount);
+            if (remainingAmount <= 0){
+                RemainingAmountToPayBackMonthly.add(0.00);
+            } else {
+                RemainingAmountToPayBackMonthly.add(remainingAmount);
+            }
         }
 
         return RemainingAmountToPayBackMonthly;
