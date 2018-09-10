@@ -1,26 +1,34 @@
 package ex7;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class LoanMonthlyDao {
 
-    public List<LoanMonthly> getLoanMonthlyParams (BigDecimal loan, double profit, int months) {
-        int month = 0;
-        double rate = 0;
-        double loanLeft = 0;
-        LoanMonthly data = new LoanMonthly(month, rate, loanLeft);
+    public List<LoanMonthly> getLoanMonthlyParams(BigDecimal loan, double profit, int months) {
+
         List<LoanMonthly> loanParams = new ArrayList<>();
+        double loanDouble = loan.doubleValue();
 
-        for (int i = 1; i <= months; i++){
-            data.getMonth(months);
-            data.getRate(loan, months, profit);
-            data.getLoanLeft(loan, months, profit);
-        }
+        for (int i = 0; i < months; i++) {
 
-        loanParams.add(data);
+                double rate = (double) (loanDouble + (loanDouble * profit / 100)) / months;
+                double loanLeft = loanDouble - (rate * i);
+
+                if (loanLeft <= 0) {
+                    rate = 0.00;
+                    loanLeft = 0.00;
+                } else if (rate >= loanLeft) {
+                    rate = loanLeft;
+                }
+
+                LoanMonthly month = new LoanMonthly(i+1, rate, loanLeft);
+                loanParams.add(month);
+
+            }
+
         return loanParams;
+
     }
 
 }
