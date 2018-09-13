@@ -12,9 +12,11 @@ import java.util.zip.ZipOutputStream;
 public class CompressDirectory {
 
     private final Logger logger = Logger.getLogger(CompressDirectory.class.getName());
-    Scanner scanner = new Scanner(System.in);
+    private Scanner scanner = new Scanner(System.in);
     private String directoryPath;
     private String directoryOutputPath;
+    private File validFile;
+
 
     public static void main(String[] args) throws IOException {
 
@@ -22,16 +24,15 @@ public class CompressDirectory {
 
         System.out.println(">>>Podaj scieżkę do folderu, który chcesz skompresować:");
         String directoryPath = compressDirectory.getDirectoryPath();
-        
+
         System.out.println(">>>Podaj scieżkę do pliku wynikowego - " +
                 "jeśli chcesz, aby plik został utworzony na tym samym poziomie co kompresowany folder, " +
                 "wciśnij enter:");
-        String directoryOutputPath = compressDirectory.getDirectoryOutputPath();
+        String directoryOutputPath = compressDirectory.getDirectoryOutputPath(directoryPath);
 
         File directory = new File(directoryPath);
         List<File> fileList = compressDirectory.getFilesFromDirectory(directory);
 
-        System.out.println(">>>Trwa kompresowanie folderu " + directory + "...");
         compressDirectory.zipDirectory(fileList, directoryPath, directoryOutputPath);
 
         System.out.println(">>>Koniec :)");
@@ -40,9 +41,15 @@ public class CompressDirectory {
 
     private String getDirectoryPath() {
 
-        while (directoryPath == null) {
+        while (directoryPath == null || !(validFile.isDirectory())) {
             try {
-                directoryPath = new String(scanner.next());
+                directoryPath = scanner.nextLine();
+                validFile = new File(directoryPath);
+
+                if (!validFile.exists()) {
+                    System.out.println("Spróbuj jeszcze raz - błędna ścieżka:");
+                }
+
             } catch (Exception e) {
                 System.out.println("Wystąpił błąd. Spróbuj jeszcze raz");
                 logger.log(Level.INFO, e.getMessage());
@@ -53,17 +60,18 @@ public class CompressDirectory {
 
     }
 
-    private String getDirectoryOutputPath() {
+    private String getDirectoryOutputPath(String directoryPath) {
 
         try {
-            directoryOutputPath = new String(scanner.next());
+            directoryOutputPath = scanner.nextLine();
+            validFile = new File(directoryOutputPath);
 
-            if (directoryOutputPath.equals("")) {
+            if (directoryOutputPath.isEmpty()){
                 directoryOutputPath = directoryPath + ".zip";
             }
 
         } catch (Exception e) {
-            System.out.println("Wystąpił błąd. Spróbuj jeszcze raz");
+            System.out.println("Wystąpił błąd.");
             logger.log(Level.INFO, e.getMessage());
         }
 
@@ -72,6 +80,8 @@ public class CompressDirectory {
     }
 
     private List<File> getFilesFromDirectory(File directory) {
+
+        System.out.println(">>>Trwa kompresowanie folderu " + directory + "...");
 
         List<File> fileList = new ArrayList<>();
 
