@@ -5,32 +5,32 @@ public class UnitConverterImpl implements UnitConverter {
 
     @Override
     public double celsiusToFahrenheit(double c) {
-        return 0;
+        return c * 9/5 + 32;
     }
 
     @Override
     public double fahrenheitToCelsius(double f) {
-        return 0;
+        return (f - 32) * 5/9;
     }
 
     @Override
     public double milesToKilometers(double m) {
-        return 0;
+        return m / 0.62137;
     }
 
     @Override
     public double kilometersToMiles(double k) {
-        return 0;
+        return k * 0.62137;
     }
 
     @Override
     public double poundsToKilograms(double p) {
-        return 0;
+        return p / 2.2046;
     }
 
     @Override
     public double kilogramsToPounds(double k) {
-        return 0;
+        return k * 2.2046;
     }
 
 }
